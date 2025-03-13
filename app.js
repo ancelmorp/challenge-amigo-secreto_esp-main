@@ -31,6 +31,8 @@ function sortearAmigo() {
         alert("No hay suficientes amigos para sortear.");
     } else {
         let amigoSorteado = amigos[(Math.floor(Math.random() * amigos.length))];
-        document.getElementById("resultado").innerHTML = amigoSorteado;
+        document.getElementById("resultado").innerHTML = "El amigo secreto sorteado es:" + amigoSorteado;
+        document.getElementById("listaAmigos").innerHTML = "";
+        amigos = [];
     }
 }
